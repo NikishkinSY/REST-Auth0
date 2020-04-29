@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DBA.WebApi.Security
+namespace DBA.Infrastructure.Security
 {
     public class HasScopeHandler : AuthorizationHandler<HasScopeRequirement>
     {

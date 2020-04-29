@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using System.Security.Claims;
 
-namespace DBA.WebApi.Security
+namespace DBA.Infrastructure.Security
 {
     public static class SecurityExtensions
     {

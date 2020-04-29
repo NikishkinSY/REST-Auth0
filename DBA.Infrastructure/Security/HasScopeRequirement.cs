@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using System;
 
-namespace DBA.WebApi.Security
+namespace DBA.Infrastructure.Security
 {
     public class HasScopeRequirement : IAuthorizationRequirement
     {
