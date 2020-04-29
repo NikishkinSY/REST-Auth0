@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
-using CTeleport.DBA.Application.Services.Interfaces;
-using CTeleport.DBA.Domain.Entities;
-using CTeleport.DBA.Domain.Exceptions;
-using CTeleport.DBA.Infrastructure.ApiClients.Interfaces;
+using DBA.Application.Services.Interfaces;
+using DBA.Domain.Entities;
+using DBA.Domain.Exceptions;
+using DBA.Infrastructure.ApiClients.Interfaces;
 using System;
 using System.Threading.Tasks;
 
-namespace CTeleport.DBA.Application.Services
+namespace DBA.Application.Services
 {
     public class CTeleportAppService: ICTeleportAppService
     {

@@ -1,4 +1,4 @@
-﻿namespace CTeleport.DBA.Application.Services.Interfaces
+﻿namespace DBA.Application.Services.Interfaces
 {
     public interface ICacheAppService
     {

@@ -1,7 +1,7 @@
-﻿using CTeleport.DBA.Domain.Enums;
+﻿using DBA.Domain.Enums;
 using System.Threading.Tasks;
 
-namespace CTeleport.DBA.Application.Services.Interfaces
+namespace DBA.Application.Services.Interfaces
 {
     public interface IAirportAppService
     {

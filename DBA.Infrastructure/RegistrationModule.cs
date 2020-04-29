@@ -1,9 +1,9 @@
-﻿using CTeleport.DBA.Infrastructure.ApiClients;
-using CTeleport.DBA.Infrastructure.ApiClients.Interfaces;
+﻿using DBA.Infrastructure.ApiClients;
+using DBA.Infrastructure.ApiClients.Interfaces;
 using Flurl.Http.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace CTeleport.DBA.Infrastructure
+namespace DBA.Infrastructure
 {
     public static class RegistrationModule
     {

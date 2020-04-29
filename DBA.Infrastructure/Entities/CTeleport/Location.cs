@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace CTeleport.DBA.Infrastructure.Entities.CTeleport
+namespace DBA.Infrastructure.Entities.CTeleport
 {
     public class Location
     {

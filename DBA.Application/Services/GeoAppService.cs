@@ -1,9 +1,9 @@
-﻿using CTeleport.DBA.Application.Services.Interfaces;
-using CTeleport.DBA.Domain.Enums;
-using CTeleport.DBA.Domain.Exceptions;
+﻿using DBA.Application.Services.Interfaces;
+using DBA.Domain.Enums;
+using DBA.Domain.Exceptions;
 using System;
 
-namespace CTeleport.DBA.Application.Services
+namespace DBA.Application.Services
 {
     // https://www.metric-conversions.org/length/kilometers-to-nautical-miles.htm
     public class GeoAppService: IGeoAppService

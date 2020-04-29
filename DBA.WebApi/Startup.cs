@@ -1,7 +1,8 @@
 using AutoMapper;
-using CTeleport.DBA.Infrastructure;
-using CTeleport.DBA.Domain;
-using CTeleport.DBA.WebApi.Middlewares;
+using DBA.Application;
+using DBA.Domain.Configuration;
+using DBA.Infrastructure;
+using DBA.WebApi.Middlewares;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -9,7 +10,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using CTeleport.DBA.Application;
 
 namespace DistanceBetweenAirports
 {

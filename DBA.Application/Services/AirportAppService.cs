@@ -1,11 +1,11 @@
-﻿using CTeleport.DBA.Application.Services.Interfaces;
-using CTeleport.DBA.Domain.Entities;
-using CTeleport.DBA.Domain.Enums;
-using CTeleport.DBA.Domain.Exceptions;
+﻿using DBA.Application.Services.Interfaces;
+using DBA.Domain.Entities;
+using DBA.Domain.Enums;
+using DBA.Domain.Exceptions;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace CTeleport.DBA.Application.Services
+namespace DBA.Application.Services
 {
     public class AirportAppService: IAirportAppService
     {

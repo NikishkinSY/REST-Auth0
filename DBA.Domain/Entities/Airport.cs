@@ -1,4 +1,4 @@
-﻿namespace CTeleport.DBA.Domain.Entities
+﻿namespace DBA.Domain.Entities
 {
     public class Airport
     {

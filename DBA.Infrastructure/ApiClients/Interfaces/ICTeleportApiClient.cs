@@ -1,7 +1,7 @@
-﻿using CTeleport.DBA.Infrastructure.Entities.CTeleport;
+﻿using DBA.Infrastructure.Entities.CTeleport;
 using System.Threading.Tasks;
 
-namespace CTeleport.DBA.Infrastructure.ApiClients.Interfaces
+namespace DBA.Infrastructure.ApiClients.Interfaces
 {
     public interface ICTeleportApiClient
     {

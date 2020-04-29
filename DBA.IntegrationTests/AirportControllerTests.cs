@@ -4,7 +4,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace CTeleport.DBA.IntegrationTests
+namespace DBA.IntegrationTests
 {
     // tester should do these tests using Postman or TestTrail
     public class AirportControllerTests : IClassFixture<WebApplicationFactory<Startup>>

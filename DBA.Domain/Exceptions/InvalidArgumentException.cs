@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CTeleport.DBA.Domain.Exceptions
+namespace DBA.Domain.Exceptions
 {
     public class InvalidArgumentException: Exception
     {

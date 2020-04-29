@@ -1,12 +1,12 @@
-﻿using CTeleport.DBA.Domain;
-using CTeleport.DBA.Infrastructure.ApiClients.Interfaces;
-using CTeleport.DBA.Infrastructure.Entities.CTeleport;
+﻿using DBA.Domain.Configuration;
+using DBA.Infrastructure.ApiClients.Interfaces;
+using DBA.Infrastructure.Entities.CTeleport;
 using Flurl.Http;
 using Flurl.Http.Configuration;
 using Microsoft.Extensions.Options;
 using System.Threading.Tasks;
 
-namespace CTeleport.DBA.Infrastructure.ApiClients
+namespace DBA.Infrastructure.ApiClients
 {
     public class CTeleportApiClient: ICTeleportApiClient
     {

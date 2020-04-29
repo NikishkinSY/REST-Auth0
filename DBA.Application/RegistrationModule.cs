@@ -1,8 +1,8 @@
-﻿using CTeleport.DBA.Application.Services;
-using CTeleport.DBA.Application.Services.Interfaces;
+﻿using DBA.Application.Services;
+using DBA.Application.Services.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace CTeleport.DBA.Application
+namespace DBA.Application
 {
     public static class RegistrationModule
     {

@@ -1,9 +1,9 @@
-﻿using CTeleport.DBA.Application.Services.Interfaces;
-using CTeleport.DBA.Domain;
+﻿using DBA.Application.Services.Interfaces;
+using DBA.Domain.Configuration;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Options;
 
-namespace CTeleport.DBA.Application.Services
+namespace DBA.Application.Services
 {
     public class CacheAppService: ICacheAppService
     {

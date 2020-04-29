@@ -1,4 +1,4 @@
-﻿namespace CTeleport.DBA.Domain.Enums
+﻿namespace DBA.Domain.Enums
 {
     public enum LenghtUnit
     {

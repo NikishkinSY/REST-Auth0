@@ -1,6 +1,6 @@
-﻿using CTeleport.DBA.Domain.Enums;
+﻿using DBA.Domain.Enums;
 
-namespace CTeleport.DBA.Application.Services.Interfaces
+namespace DBA.Application.Services.Interfaces
 {
     public interface IGeoAppService
     {

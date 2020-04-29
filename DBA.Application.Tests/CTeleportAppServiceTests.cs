@@ -1,15 +1,15 @@
 ﻿using AutoMapper;
-using CTeleport.DBA.Infrastructure.Entities.CTeleport;
-using CTeleport.DBA.Infrastructure.ApiClients.Interfaces;
-using CTeleport.DBA.Application.Services;
-using CTeleport.DBA.Application.Services.Interfaces;
-using CTeleport.DBA.Domain.Exceptions;
+using DBA.Infrastructure.Entities.CTeleport;
+using DBA.Infrastructure.ApiClients.Interfaces;
+using DBA.Application.Services;
+using DBA.Application.Services.Interfaces;
+using DBA.Domain.Exceptions;
 using Moq;
 using System;
 using Xunit;
-using CTeleport.DBA.Application;
+using DBA.Application;
 
-namespace CTeleport.DBA.ApplicationServices.Tests
+namespace DBA.ApplicationServices.Tests
 {
     public class CTeleportAppServiceTests
     {

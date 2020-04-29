@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CTeleport.DBA.Domain
+namespace DBA.Domain.Configuration
 {
     public class AppSettings
     {

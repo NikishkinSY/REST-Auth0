@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Net;
 using System.Threading.Tasks;
-using CTeleport.DBA.Domain.Exceptions;
+using DBA.Domain.Exceptions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
-namespace CTeleport.DBA.WebApi.Middlewares
+namespace DBA.WebApi.Middlewares
 {
     public class ErrorHandlingMiddleware
     {
