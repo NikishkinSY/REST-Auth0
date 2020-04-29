@@ -17,6 +17,12 @@ namespace DistanceBetweenAirports.Controllers.V1
             _airportService = airportService;
         }
 
+        [HttpGet("public")]
+        public IActionResult Public()
+        {
+            return Ok(new { Value = "public" });
+        }
+
         [Authorize]
         [HttpGet("get-distance-between/{firstAirportCode}/{secondAirportCode}")]
         public async Task<IActionResult> GetDistanceBetweenTwoAirports([FromRoute] string firstAirportCode, [FromRoute] string secondAirportCode, [FromRoute] LenghtUnit measure = LenghtUnit.Miles)
