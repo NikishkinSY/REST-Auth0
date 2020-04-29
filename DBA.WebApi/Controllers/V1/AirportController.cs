@@ -25,10 +25,10 @@ namespace DistanceBetweenAirports.Controllers.V1
 
         [Authorize]
         [HttpGet("get-distance-between/{firstAirportCode}/{secondAirportCode}")]
-        public async Task<IActionResult> GetDistanceBetweenTwoAirports([FromRoute] string firstAirportCode, [FromRoute] string secondAirportCode, [FromRoute] LenghtUnit measure = LenghtUnit.Miles)
+        public async Task<IActionResult> GetDistanceBetweenTwoAirports([FromRoute] string firstAirportCode, [FromRoute] string secondAirportCode, [FromRoute] LenghtUnit unit = LenghtUnit.Miles)
         {
-            var distance = await _airportService.GetDistanceBetweenAirportsAsync(firstAirportCode, secondAirportCode, measure);
-            return Ok(new { Value = distance, Measure = measure.ToString()});
+            var distance = await _airportService.GetDistanceBetweenAirportsAsync(firstAirportCode, secondAirportCode, unit);
+            return Ok(new { Value = distance, Unit = unit.ToString()});
         }
     }
 }
