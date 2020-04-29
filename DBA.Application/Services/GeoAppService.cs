@@ -38,6 +38,14 @@ namespace DBA.Application.Services
 
         public double Distance(double lat1, double lon1, double lat2, double lon2, LenghtUnit lenghtUnit)
         {
+            if ((-180 > lat1 && lat1 <= 180)
+                || (-180 > lon1 && lon1 <= 180)
+                || (-180 > lat2 && lat2 <= 180)
+                || (-180 > lon2 && lon2 <= 180))
+            {
+                throw new InvalidArgumentException("Coordinates have negative value");
+            }
+
             if ((lat1 == lat2) && (lon1 == lon2))
             {
                 return 0;

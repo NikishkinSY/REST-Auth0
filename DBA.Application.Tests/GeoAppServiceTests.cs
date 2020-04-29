@@ -33,7 +33,7 @@ namespace DBA.ApplicationServices.Tests
         }
 
         [Theory]
-        [InlineData(-1, -1, -1, -1)]
+        [InlineData(-190, -100, -100, -100)]
         public void Coordinates_CountDistance_ThrowInvalidArgumentException(double lat1, double lon1, double lat2, double lon2)
         {
             // arrange

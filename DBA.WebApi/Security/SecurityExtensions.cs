@@ -7,7 +7,7 @@ using System.Security.Claims;
 
 namespace DBA.WebApi.Security
 {
-    public static class SecureExtensions
+    public static class SecurityExtensions
     {
         public static IServiceCollection AddAuthentication(this IServiceCollection services, Auth0Settings settings)
         {
