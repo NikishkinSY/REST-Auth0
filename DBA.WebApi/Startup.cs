@@ -3,6 +3,7 @@ using DBA.Application;
 using DBA.Domain.Configuration;
 using DBA.Infrastructure;
 using DBA.WebApi.Middlewares;
+using DBA.WebApi.Security;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -48,6 +49,11 @@ namespace DistanceBetweenAirports
             });
 
             services.AddApiVersioning();
+
+            // settings Auth0
+            var auth0Settings = Configuration.GetSection("Auth0").Get<Auth0Settings>();
+            services.AddAuthentication(auth0Settings);
+            services.AddAuthorizationExt();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -60,6 +66,9 @@ namespace DistanceBetweenAirports
 
             app.UseRouting();
             app.UseMiddleware<ErrorHandlingMiddleware>();
+
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

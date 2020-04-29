@@ -1,4 +1,6 @@
 ﻿using DBA.Application.Services.Interfaces;
+using DBA.Domain.Enums;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
@@ -15,11 +17,12 @@ namespace DistanceBetweenAirports.Controllers.V1
             _airportService = airportService;
         }
 
+        [Authorize]
         [HttpGet("get-distance-between/{firstAirportCode}/{secondAirportCode}")]
-        public async Task<IActionResult> GetDistanceBetweenTwoAirports([FromRoute] string firstAirportCode, [FromRoute] string secondAirportCode)
+        public async Task<IActionResult> GetDistanceBetweenTwoAirports([FromRoute] string firstAirportCode, [FromRoute] string secondAirportCode, [FromRoute] LenghtUnit measure = LenghtUnit.Miles)
         {
-            var distance = await _airportService.GetDistanceBetweenAirportsAsync(firstAirportCode, secondAirportCode);
-            return Ok(new { Value = distance });
+            var distance = await _airportService.GetDistanceBetweenAirportsAsync(firstAirportCode, secondAirportCode, measure);
+            return Ok(new { Value = distance, Measure = measure.ToString()});
         }
     }
 }
