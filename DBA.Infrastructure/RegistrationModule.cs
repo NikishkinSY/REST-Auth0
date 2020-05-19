@@ -11,7 +11,7 @@ namespace DBA.Infrastructure
         {
             return services
                 .AddScoped<ICTeleportApiClient, CTeleportApiClient>()
-                .AddScoped<IFlurlClientFactory, PerBaseUrlFlurlClientFactory>();
+                .AddSingleton<IFlurlClientFactory, PerBaseUrlFlurlClientFactory>();
         }
     }
 }
